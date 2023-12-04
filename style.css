@@ -1,0 +1,1329 @@
+#heading {
+    position: fixed; /* Fixed position to stay at the top during scrolling */
+    top: 0;
+    left: 0;
+    width: 100%;
+    font-family: 'Noto Sans JP', sans-serif;
+    background: url('Images/waves1.gif') center center; /* Background image centered */
+    background-size: 100%; /* Cover the entire header with the background image */
+    color: whitesmoke; /* Text color */
+    padding-top: 85px; /* Add padding to the top */
+    padding-bottom: 40px; /* Add padding to the bottom */
+    text-align: center;
+    height: 170px; /* Initial height of the header */
+    transition: height 0.6s; /* Smooth transition effect for height changes */
+    z-index: 2; /* Ensures the header stays above other elements */
+}
+
+#heading.scrolled {
+    height: 10px; /* Reduced height when scrolled */
+}
+
+/* Styling for rounded navigation bar*/
+p.round3 {
+    border: 2px solid white;
+    border-radius: 30px;
+    padding: 10px;
+    display: inline-block;
+}
+
+p.round3 a {
+    color: rgb(211, 211, 211); /* Link color */
+    text-decoration: none;
+    margin: 15px;
+    font-weight: bold;
+}
+
+/*About section*/
+.rowpg1 {
+    display: flex;
+    align-items: center;
+}
+
+#content-container {
+    display: flex;
+    align-items: center;
+    background-color: aliceblue;
+    width: 100%;
+    margin-top: -10px; 
+}
+
+#image-container {
+    width: 395px;
+    height: 525px;
+    padding-top: 300px; /* Adding padding for better visual spacing */
+    padding-left: 25px;
+}
+
+#cropped-image {
+    width: 85%;
+    height: 85%;
+    object-fit: full; /* Full object fit within the container */
+    border-radius: 10%;
+}
+
+#paragraph-container {
+    margin-left: 10px;
+    max-width: 320px;
+    padding-top: 270px;
+    text-align: center;
+    font-size: 12px;
+    font-family: 'Roboto Mono', monospace;
+}
+
+/*Member 1*/
+#member1-image-container {
+    width: 135px;
+    height: 135px;
+    margin-left: 150px; 
+    margin-top: 10px;
+}
+
+#member1-image-container:hover img { /* Enlargement on hover */
+    transform: scale(1.06); /*This is to control the degree of enlargement or reduction*/
+    transition: transform 0.2s; /* Add a smooth transition effect */
+}
+
+#member1-image{
+    width: 100%;
+    height: 100%;
+    border-radius: 100%; /* Creating a circular image */
+}
+
+#member1-desc-container{
+    text-align: left;
+    margin-top: 20px;
+    margin-left: 29px;
+}
+
+#member1-desc-container .font1{
+    font-size: 19px;
+    font-family: 'Lexend', sans-serif;
+    font-weight: bold;
+}
+
+#member1-desc-container .font2{
+    font-size: 14px;
+    font-family: 'Lexend', sans-serif;
+    font-style: italic;
+}
+
+/*Member 2*/
+#member2-image-container {
+    width: 135px;
+    height: 135px;
+    margin-left: 32px;
+    margin-top: 270px;
+}
+
+#member2-image-container:hover img {
+    transform: scale(1.06); /*This is to control the degree of enlargement or reduction*/
+    transition: transform 0.2s; /* Add a smooth transition effect */
+}
+
+#member2-image{
+    width: 100%;
+    height: 100%;
+    border-radius: 100%; /* Creating a circular image */
+}
+
+#member2-desc-container {
+    text-align: left;
+    margin-left: -129px;
+    margin-top: 290px;
+}
+
+#member2-desc-container .font1{
+    font-size: 19px;
+    font-family: 'Lexend', sans-serif;
+    font-weight: bold;
+}
+
+#member2-desc-container .font2{
+    font-size: 14px;
+    font-family: 'Lexend', sans-serif;
+    font-style: italic;
+}
+
+/*Member 3*/
+#member3-image-container {
+    width: 135px;
+    height: 135px;
+    margin-left: -438px; 
+    margin-top: 543px;
+}
+
+#member3-image-container:hover img {
+    transform: scale(1.06); /*This is to control the degree of enlargement or reduction*/
+    transition: transform 0.2s; /* Add a smooth transition effect */
+}
+
+#member3-image{
+    width: 100%;
+    height: 100%;
+    border-radius: 100%; /* Creating a circular image */
+}
+
+#member3-desc-container {
+    text-align: left;
+    margin-top: 545px;
+    margin-left: 29px;
+}
+
+#member3-desc-container .font1{
+    font-size: 19px;
+    font-family: 'Lexend', sans-serif;
+    font-weight: bold;
+}
+
+#member3-desc-container .font2{
+    font-size: 14px;
+    font-family: 'Lexend', sans-serif;
+    font-style: italic;
+}
+
+/*Music Section*/
+#music-container {
+    background-color: rgb(184, 219, 235); /* Background color for the music container */
+    width: 95%; /* Change to 100% for full width */
+    height: 485px;
+    padding: 70px; /* Add padding for internal spacing */
+    margin-left: -40px;
+    margin-top: -90px;
+}
+
+/*For the YouTube video*/
+#video-container {
+    background-color: rgb(212, 233, 243); /* Background color */
+    width: 650px; /* Width of the video container */
+    height: 425px; /* Height of the video container */
+    border: 10px solid rgb(212, 233, 243); /* Border color and size */
+    border-radius: 15px; /* Border radius to create rounded corners */
+    box-sizing: border-box; 
+    padding-bottom: 50px;
+    text-align: center; /* Center-align text within the container */
+    font-size: 14px; /* Font size for text inside the container */
+    font-family: 'Lexend', sans-serif; /* Font family for text inside the container */
+}
+
+#video-container iframe {
+    width: 100%; /* Full width for embedded iframe */
+    height: 100%; /* Full height for embedded iframe */
+    border-radius: 10px; /* Adjust the radius to round the corners of the video */
+}
+
+/*Album 1*/
+#album1-container {
+    width: 175px;
+    height: 175px;
+    margin-left: 842px; /* Adjust the margin as needed */
+    margin-top: -455px;
+}
+
+#album1-container:hover img {
+    transform: scale(1.1); /* Increase the scale to 1.1 on hover*/
+    transition: transform 0.2s; /* Add a smooth transition effect */
+}
+
+#album1-image {
+    width: 100%;
+    height: 100%;
+    border-radius: 10%; /* Border radius to create rounded corners */
+}
+
+#album1-desc-container{
+    text-align: left; /* Align text to the left */
+    margin-left: 1044px;
+    margin-top: -101px;
+    font-size: 15px;
+    font-family: 'Lexend', sans-serif;
+}
+
+#album1-desc-container a {
+    color: black; /* Set link color to black */
+    text-decoration: none; /* Remove underline */
+    transition: font-size 0.2s; /* Add a smooth transition for font size */
+}
+
+#album1-desc-container a:hover {
+    font-size: 16px; /* Increase font size on hover */
+}
+
+/*Album 2*/
+#album2-container {
+    width: 175px;
+    height: 175px;
+    margin-left: 1020px; /* Adjust the margin as needed */
+    margin-top: 87px;
+}
+
+#album2-image {
+    width: 100%;
+    height: 100%;
+    border-radius: 10%;
+}
+
+#album2-desc-container{
+    text-align: left;
+    margin-left: 850px;
+    margin-top: -100px;
+    font-size: 15px;
+    font-family: 'Lexend', sans-serif;
+}
+
+#album2-desc-container a {
+    color: black; /* Set link color to black */
+    text-decoration: none; /* Remove underline */
+    transition: font-size 0.2s; /* Add a smooth transition for font size */
+}
+
+#album2-desc-container a:hover {
+    font-size: 16px; /* Increase font size on hover */
+}
+
+#album2-container:hover img {
+    transform: scale(1.1); /* Increase the scale to 1.1 on hover (adjust as needed) */
+    transition: transform 0.2s; /* Add a smooth transition effect */
+}
+
+/*Album 3*/
+#album3-container {
+    width: 175px;
+    height: 175px;
+    margin-left: 842px; /* Adjust the margin as needed */
+    margin-top: 87px;
+}
+
+#album3-container:hover img {
+    transform: scale(1.1); /* Increase the scale to 1.1 on hover*/
+    transition: transform 0.2s; /* Add a smooth transition effect */
+}
+
+#album3-image {
+    width: 100%;
+    height: 100%;
+    border-radius: 10%;
+}
+
+#album3-desc-container{
+    text-align: left;
+    margin-left: 1068px;
+    margin-top: -93px;
+    font-size: 15px;
+    font-family: 'Lexend', sans-serif;
+}
+
+#album3-desc-container a {
+    color: black; /* Set link color to black */
+    text-decoration: none; /* Remove underline */
+    transition: font-size 0.2s; /* Add a smooth transition for font size */
+}
+
+#album3-desc-container a:hover {
+    font-size: 16px; /* Increase font size on hover */
+}
+
+/*Tour Section*/
+#video-background-container {
+    width: 95%;
+    height: 485px;
+    padding: 70px;
+    margin-left: -40px;
+    margin-top: -90px;
+    overflow: hidden; /* Ensure the video doesn't overflow its container */
+    position: relative; /* Create a positioning context for absolute positioning of the video element */
+}
+
+#video-background-container video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Cover the entire container */
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#title,
+#dates,
+#ticket-button-1,
+#ticket-button-2 {
+    /* Ensure other content is positioned above the video */
+    position: relative;
+    z-index: 1;
+}
+
+/*Title*/
+#title{
+    text-align: center;
+    margin-top: -20px;
+}
+
+.main-text {
+    font-family: 'Lexend', sans-serif; 
+    font-size: 44px;
+    font-weight: bold; 
+    color: whitesmoke;
+}
+
+.separator {
+    font-size: 54px;
+    font-weight: bold;
+    color: white;
+}
+
+.sub-text {
+    font-family: 'Lexend', sans-serif; /* Replace with your desired font */
+    font-size: 32px; 
+    color: whitesmoke;
+}
+
+/*Tour-date1*/
+#tour-date1-container{
+    display: flex; /* Use flexbox for layout */
+}
+
+.date, .day, .location, .country {
+    font-family: 'Lexend', sans-serif; /* Set font family for consistency */
+    color: whitesmoke; /* Set text color */
+}
+
+.date {
+    font-size: 24px;
+    font-weight: bold;
+    margin-left: 170px;
+    margin-top: 50px;
+    display: flex; /* Use flexbox for layout */
+}
+
+.day {
+    font-size: 18px;
+    margin-left: 240px;
+    margin-top: 100px;
+}
+
+.location {
+    font-size: 24px;
+    margin-left: 448px;
+    margin-top: -52px; 
+    display: flex; /* Use flexbox for layout */
+    text-align: center;
+}
+
+.country {
+    font-size: 18px;
+    margin-left: 540px;
+    margin-top: 100px;
+}
+
+/*Tour-date2*/
+#tour-date2-container{
+    display: flex; /* Use flexbox for layout */
+}
+
+.date2, .day2, .location2, .country2 {
+    font-family: 'Lexend', sans-serif; /* Set font family for consistency */
+    color: whitesmoke; /* Set text color */
+}
+
+.date2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-left: 170px;
+    margin-top: 70px;
+    display: flex;
+}
+
+.day2 {
+    font-size: 18px;
+    margin-left: 240px;
+    margin-top: 130px;
+}
+
+.location2 {
+    font-size: 24px;
+    margin-left: 580px;
+    margin-top: -52px; 
+    display: flex;
+
+}
+
+.country2 {
+    font-size: 18px;
+    margin-left: 557px;
+    margin-top: 80px;
+}
+
+/*ticket-button-1 position and colour transition*/
+#ticket-button-1 {
+    margin-left: 1070px;
+    margin-top: -163px;
+}
+
+#ticket-button-1 a {
+    border-radius: 35px;
+    background: white;
+    padding: 13px 40px;
+    font-family: 'Lexend', sans-serif;
+    font-size: 17px;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    transition: background 0.3s, color 0.3s; /* Add smooth transitions for background and color */
+}
+
+#ticket-button-1 a:hover {
+    background: black; /* Change background color on hover */
+    color: white; /* Change text color on hover */
+}
+
+/*ticket-button-2 position and colour transition*/
+#ticket-button-2 {
+    margin-left: 1070px;
+    margin-top: 98px;
+}
+
+#ticket-button-2 a {
+    border-radius: 35px;
+    background: white;
+    padding: 13px 40px;
+    font-family: 'Lexend', sans-serif;
+    font-size: 17px;
+    font-size: 17px;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    transition: background 0.3s, color 0.3s; /* Add smooth transitions for background and color */
+}
+
+#ticket-button-2 a:hover {
+    background: black; /* Change background color on hover */
+    color: white; /* Change text color on hover */
+}
+
+/*Merch Section*/
+#merch-container {
+    background-color: rgb(249, 232, 181);
+    width: 95%;
+    height: 475px;
+    padding: 70px;
+    margin-left: -40px;
+    margin-top: -90px; /*To push the merch container to be under the tour section without any white gaps in between*/
+}
+
+/*Merch1*/
+#merch1-image-container{
+    width: 380px;
+    height: 380px;
+    margin-left: -10px; 
+    margin-top: -14px;
+}
+
+#merch1-image-container:hover img {
+    transform: scale(1.02); 
+    transition: transform 0.2s; /* Add a smooth transition effect */
+}
+
+#merch1-image{
+    width: 100%;
+    height: 100%;
+    border-radius: 10%;
+}
+
+#merch1-desc-container{
+    text-align: left;
+    margin-left: 94px;
+    margin-top: 20px;
+    font-size: 15px;
+    font-family: 'Lexend', sans-serif;
+}
+
+#merch1-desc-container a {
+    color: black; /* Set link color to black */
+    text-decoration: none; /* Remove underline */
+    transition: color 0.2s; /* Add a smooth transition for font size */
+}
+
+#merch1-desc-container a:hover {
+    color: white
+}
+
+
+
+/*Merch2*/
+#merch2-image-container{
+    width: 380px;
+    height: 380px;
+    margin-left: 510px; /* Adjust the margin as needed */
+    margin-top: -420px;
+}
+
+#merch2-image-container:hover img {
+    transform: scale(1.02); 
+    transition: transform 0.2s; /* Add a smooth transition effect */
+}
+
+#merch2-image{
+    width: 100%;
+    height: 100%;
+    border-radius: 10%;
+}
+
+#merch2-desc-container{
+    text-align: left;
+    margin-left: 565px;
+    margin-top: 20px;
+    font-size: 15px;
+    font-family: 'Lexend', sans-serif;
+}
+
+#merch2-desc-container a {
+    color: black; /* Set link color to black */
+    text-decoration: none; /* Remove underline */
+    transition: color 0.2s; /* Add a smooth transition for font size */
+}
+
+#merch2-desc-container a:hover {
+    color: white; /* Change text color on hover */
+}
+
+/*Merch3*/
+#merch3-image-container{
+    width: 380px;
+    height: 380px;
+    margin-left: 1027px; 
+    margin-top: -420px;
+}
+
+#merch3-image-container:hover img {
+    transform: scale(1.02); 
+    transition: transform 0.2s; /* Add a smooth transition effect */
+}
+
+#merch3-image{
+    width: 100%;
+    height: 100%;
+    border-radius: 10%;
+}
+
+#merch3-desc-container{
+    text-align: left;
+    margin-left: 1060px;
+    margin-top: 20px;
+    font-size: 15px;
+    font-family: 'Lexend', sans-serif;
+}
+
+#merch3-desc-container a {
+    color: black; /* Set link color to black */
+    text-decoration: none; /* Remove underline */
+    transition: color 0.2s; /* Add a smooth transition for font size */
+}
+
+#merch3-desc-container a:hover {
+    color: white; /* Change text color on hover */
+}
+
+/*buy-now-button-1 position and colour transition*/
+#buy-now-button-1 {
+    margin-left: 100px;
+    margin-top: 28px;
+}
+
+#buy-now-button-1 a {
+    border-radius: 35px;
+    background: white;
+    padding: 13px 40px;
+    font-family: 'Lexend', sans-serif;
+    font-size: 17px;
+    font-size: 17px;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    transition: background 0.3s, color 0.3s; /* Add smooth transitions for background and color */
+}
+
+#buy-now-button-1 a:hover {
+    background: black; /* Change background color on hover */
+    color: white; /* Change text color on hover */
+}
+
+/*buy-now-button-2 position and colour transition*/
+#buy-now-button-2 {
+    margin-left: 620px;
+    margin-top: -20px;
+}
+
+#buy-now-button-2 a {
+    border-radius: 35px;
+    background: white; /*Make the button colour white*/
+    padding: 13px 40px; /*Aligning of the words in the button*/
+    font-family: 'Lexend', sans-serif;
+    font-size: 17px;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    transition: background 0.3s, color 0.3s; /* Add smooth transitions for background and color */
+}
+
+#buy-now-button-2 a:hover {
+    background: black; /* Change background color on hover */
+    color: white; /* Change text color on hover */
+}
+
+
+/*buy-now-button-3 position and colour transition*/
+#buy-now-button-3 {
+    margin-left: 1140px;
+    margin-top: -20px;
+}
+
+#buy-now-button-3 a {
+    border-radius: 35px;
+    background: white;
+    padding: 13px 40px;
+    font-family: 'Lexend', sans-serif;
+    font-size: 17px;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    transition: background 0.3s, color 0.3s; /* Add smooth transitions for background and color */
+}
+
+#buy-now-button-3 a:hover {
+    background: black; /* Change background color on hover */
+    color: white; /* Change text color on hover */
+}
+
+/*Visit-Store-button position and colour transition*/
+#visit-store {
+    margin-left: 636px;
+    margin-top: 47px;
+}
+
+#visit-store a{
+    color: black; /*Black text font color*/
+    font-family: 'Lexend', sans-serif;
+    font-size: 17px;
+}
+
+#visit-store a:hover {
+    color: rgba(0, 0, 0, 0.6); /* Dimmed black color on hover*/
+}
+
+/*Navigation Buttons*/
+#about, #music, #tour, #merch, #signup {
+    margin-top: 50px;
+    padding: 20px;
+}
+
+
+/*Sign Up Section*/
+#sign-up {
+    background-color: whitesmoke;
+    width: 93.9%;
+    height: 576px;
+    padding: 70px;
+    margin-left: -40px;
+    margin-top: -20px; 
+    text-align: center;
+}
+
+#signup-heading {
+    margin-top: 90px;
+    margin-left: -595px;
+    font-family: 'Lexend', sans-serif;
+}
+
+#signup-text {
+    margin-top: 30px;
+    margin-left: 220px;
+    line-height: 1.5; 
+    font-family: 'Lexend', sans-serif;
+    text-align: center;
+    width: 370px
+}
+
+#vertical-line {
+    border-left: 5px solid black; /* This adjusts the color and thickness for the vertical line*/
+    height: 70%;
+    margin-left: 710px;
+    margin-top: -245px;
+}
+
+/* Sign Up Form */
+#signup-form {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-family: 'Lexend', sans-serif;
+    margin-left: 790px;
+    margin-top: -345px;
+}
+
+.input-box {
+    background-color: rgb(209, 209, 209);
+    padding: 10px 10px; /* Increased top padding and adjusted horizontal padding */
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column; /* Stack children vertically */
+    align-items: center; /* Center align items horizontally */
+    margin-bottom: 20px;
+    width: 500px;
+}
+
+
+.input-label {
+    font-size: 14px;
+    margin-bottom: 5px; /* Add margin to separate label from input */
+}
+
+.input-field {
+    padding: 8px;
+    border: none;
+    border-radius: 5px;
+    width: 200px;
+    height: 10px;
+    background-color: rgb(209, 209, 209);
+    font-family: 'Lexend', sans-serif;
+    text-align: center; /* Center-align text in the input field */
+}
+
+#signup-form button {
+    background-color: rgb(221, 221, 231); /* Make the fill in boxes be grey*/
+    color: black;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-family: 'Lexend', sans-serif;
+
+}
+
+#signup-form button:hover {
+    background: black; /* Change background color on hover */
+    color: white; /* Change text color on hover */
+    transition: background 0.3s, color 0.3s;
+}
+
+#popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    z-index: 3;
+    font-family: 'Lexend', sans-serif;
+}
+
+.footer {
+    background-color: lavender;
+    margin-left: -70px;
+    margin-top: 150px;
+    padding: 70px; /* Adjust the padding to control the height of footer */
+    text-align: center;
+    width: 100%;
+    font-family: 'Lexend', sans-serif;
+    font-size: 13px;
+    height: 50px;
+}
+
+.footer a {
+    text-decoration: none;
+    color: #333;
+    font-family: 'Lexend', sans-serif;
+}
+
+/*Facebook*/
+#facebook-image-container {
+    width: 22px;
+    height: 22px;
+    margin-left: 600px;
+    margin-top: -100px;
+}
+
+#facebook-image {
+    width: 100%;
+    height: 100%;
+}
+
+/*Instagram*/
+#instagram-image-container {
+    width: 24px;
+    height: 24px;
+    margin-left: 636px;
+    margin-top: -23.5px;
+}
+
+#instagram-image {
+    width: 100%;
+    height: 100%;
+}
+
+/*TikTok*/
+#tiktok-image-container {
+    width: 21.5px;
+    height: 21.5px;
+    margin-left: 675px;
+    margin-top: -22px;
+}
+
+#tiktok-image {
+    width: 100%;
+    height: 100%;
+}
+
+/*YouTube*/
+#youtube-image-container {
+    width: 22px;
+    height: 22px;
+    margin-left: 713px;
+    margin-top: -22px;
+}
+
+#youtube-image {
+    width: 100%;
+    height: 100%;
+}
+
+/*Twitter*/
+#twitter-image-container {
+    width: 22px;
+    height: 22px;
+    margin-left: 750px;
+    margin-top: -22px;
+}
+
+#twitter-image {
+    width: 100%;
+    height: 100%;
+}
+
+/*Spotify*/
+#spotify-image-container {
+    width: 22px;
+    height: 22px;
+    margin-left: 787px;
+    margin-top: -22px;
+}
+
+#spotify-image {
+    width: 100%;
+    height: 100%;
+}
+
+html, body {
+    scroll-behavior: smooth;
+}
+
+
+/*@media for phone size*/
+@media only screen and (max-width: 600px) {
+    #heading{
+        flex-direction: column;
+    }
+
+    .rowpg1 {
+        flex-direction: column; /* Stack items vertically on smaller screens */
+    }
+
+    #content-container {
+        flex-direction: column; /* Stack items vertically on smaller screens */
+        margin-top: -40px;
+        width: 570px;
+        text-align: center;
+        margin-left: -20px;
+        height: 1450px;
+    }
+
+    #image-container {
+        width: 70%; 
+        margin-top: 10px;
+        flex-direction: column;
+    }
+
+    #paragraph-container {
+        margin-top: -340px;
+        text-align: center; /* Center-align text on smaller screens */
+        font-size: 12px; /* Increase font size for better readability on smaller screens */
+    }
+
+    #member1-image-container{
+        margin-left: -200px;
+        margin-top: 20px;
+        width: 110px;
+        height: 110px;
+        flex-direction: column;
+    }
+    
+    #member1-desc-container{
+        margin-left: 180px; 
+        margin-top: -90px;
+        flex-direction: column;
+    }
+
+    #member2-image-container{
+        width: 110px;
+        height: 110px;
+        margin-left: 180px;
+        margin-top: -95px;
+    }
+
+    #member2-desc-container{
+        margin-top: 70px;
+        margin-left: -180px;
+    }
+
+    #member3-image-container {
+        width: 110px;
+        height: 110px;
+        margin-top: 10px;
+        margin-left: -205px;
+    }
+
+    #member3-desc-container {
+        margin-top: -100px;
+        margin-left: 180px;
+    }
+
+    /* Additional adjustments for the Music Section */
+    #music-container {
+        width: 100%; /* Adjust width for full width on smaller screens */
+        margin-left: -10;
+        margin-top: -90px;
+        padding: 50px; /* Adjust padding for better spacing on smaller screens */
+        flex-direction: column;
+        height: 1000px; 
+    }
+
+    #video-container {
+        width: 100%; /* Adjust width for full width on smaller screens */
+    }
+
+    /* Additional adjustments for the Albums */
+    #album1-container{
+        width: 40%; /* Adjust width for full width on smaller screens */
+        margin-left: 0; /* Remove margin */
+        margin-top: 20px; 
+    }
+
+    #album1-desc-container{
+        width: 40%; /* Adjust width for full width on smaller screens */
+        margin-left: 220px; 
+        margin-top: -90px;
+    }
+
+    #album2-container{
+        width: 40%; /* Adjust width for full width on smaller screens */
+        margin-left: 0; /* Remove margin */
+        margin-top: 80px; 
+        margin-left: 190px;
+    }
+
+    #album2-desc-container{
+        width: 40%; /* Adjust width for full width on smaller screens */
+        margin-left: 10px;
+        margin-top: -95px;
+    }
+
+    #album3-container {
+        width: 40%; /* Adjust width for full width on smaller screens */
+        margin-left: 0; 
+        margin-top: 90px; /* Adjust margin-top for spacing between items */
+    }
+
+    #album3-desc-container {
+        width: 40%; /* Adjust width for full width on smaller screens */
+        margin-left: 220px;
+        margin-top: -90px; /* Adjust margin-top for spacing between items */
+    }
+
+    /* Additional adjustments for the Tour Section */
+    #video-background-container {
+        margin: 700px;
+        width: 107%; /* Adjust width for full width on smaller screens */
+        margin-left: -30px; 
+        padding: 30px; /* Adjust padding for better spacing on smaller screens */
+        margin-top: -90px;
+        display: flex;
+    }
+
+    /* Title */
+    #title {
+        margin-top: 20px;
+        margin-left: 10px;
+        display: flex;
+        width: 30%;
+    }
+
+    .main-text {
+        font-size: 30px;
+        margin-left: 15px;
+        text-align: center;
+    }
+
+    .separator {
+        font-size: 75px;
+        margin-top: -10px;
+        margin-left: 50px;
+    }
+
+    .sub-text {
+        font-size: 22px;
+        margin-top: 5px;
+        margin-left: 48px;
+    }
+
+
+    .date {
+        font-size: 18px; 
+        margin-left: -130px; 
+        margin-top: 210px;
+    }
+
+    .day {
+        font-size: 13px; 
+        margin-left: -80px; 
+    }
+
+    .location {
+        font-size: 18px; 
+        margin-left: 70px; 
+        margin-top: -75px;
+        width: 40%;
+    }
+
+    .country {
+        font-size: 13px; 
+        margin-left: 65px; 
+        margin-top: -40px;
+    }
+
+    #tour-date2-container{
+        margin-left: 20px;
+    }
+
+    .date2 {
+        font-size: 18px; 
+        margin-left: -130px; 
+        margin-top: 90px;
+    }
+
+    .day2 {
+        font-size: 13px;
+        margin-left: -75px;
+    }
+
+    .location2 {
+        font-size: 18px;
+        margin-left: 90px; 
+        margin-top: -45px;
+    }
+
+    .country2 {
+        font-size: 13px; 
+        margin-left: 75px; 
+        margin-top: -20px;
+    }
+
+    #ticket-button-1 {
+        margin-left: -450px;
+        margin-top: 295px;
+    }
+
+    #ticket-button-1 a {
+        display: flex; /* Add this property to make the anchor element a block-level element */
+        border-radius: 35px;
+        background: white;
+        padding: 8px 40px;
+        font-family: 'Lexend', sans-serif;
+        font-size: 11px;
+        color: black;
+        text-align: center;
+        text-decoration: none;
+        transition: background 0.3s, color 0.3s;
+    }
+
+    #ticket-button-2 {
+        margin-left: -140px; /* Adjust the margin for the second button */
+        margin-top: 408px; /* Adjust the top margin for the second button */
+    }
+    
+    #ticket-button-2 a {
+        display: flex;
+        border-radius: 35px;
+        background: white;
+        padding: 8px 40px;
+        font-family: 'Lexend', sans-serif;
+        font-size: 11px;
+        color: black;
+        text-align: center;
+        text-decoration: none;
+        transition: background 0.3s, color 0.3s;
+    }
+
+    #merch {
+        margin: 700px;
+        width: 96%;
+        margin-left: -50px;
+        padding: 30px;
+        margin-top: -660px;
+        display: flex;
+    }
+
+    #merch1-image-container{
+        width: 160px;
+        height: 160px;
+        margin-left: 30px; 
+        margin-top: -32px;
+    }
+
+    #merch1-desc-container{
+        margin-left: 250px;
+        margin-top: -125px;
+    }
+
+    #buy-now-button-1 {
+        margin-left: 235px;
+        margin-top: -330px;
+    }
+
+    #merch2-image-container{
+        width: 160px;
+        height: 160px;
+        margin-left: 235px; 
+        margin-top: 104px;
+    }
+
+    #merch2-desc-container{
+        margin-left: 45px;
+        margin-top: -145px;
+        width: 42%;
+    }
+
+    #buy-now-button-2 {
+        margin-left: 35px;
+        margin-top: 130px;
+    }
+
+    #merch3-image-container{
+        width: 160px;
+        height: 160px;
+        margin-left: 45px; /* Adjust the margin as needed */
+        margin-top: 114px;
+    }
+
+    #merch3-desc-container{
+        margin-left: 245px;
+        margin-top: -115px;
+        width: 42%;
+    }
+    
+    #buy-now-button-3 {
+        margin-left: 237px;
+        margin-top: 180px;
+    }
+
+    #visit-store {
+        margin-left: 176px;
+        margin-top: 70px;
+    }
+
+    #sign-up {
+        width: 80.3%;
+        height: 576px;
+        padding: 70px;
+        margin-left: -40px;
+        margin-top: -730px; /* Adjust the margin-top value */
+        text-align: center;
+    }
+
+    #signup-heading {
+        margin-top: -20px;
+        margin-left: 145px;
+        text-align: center;
+        display: flex;
+    }
+
+    #signup-text {
+        margin-top: 30px;
+        margin-left: 25px;
+        text-align: center;
+        width: 370px;
+        font-size: 14px;
+    }
+
+    #vertical-line {
+        border-left: none;
+    }
+
+    /* Sign Up Form */
+    #signup-form {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        margin-left: 90px;
+        margin-top: -145px;
+    }
+
+    .input-box {
+        padding: 5px 5px; /* Increased top padding and adjusted horizontal padding */
+        border-radius: 5px;
+        display: flex;
+        flex-direction: column; /* Stack children vertically */
+        align-items: center; /* Center align items horizontally */
+        margin-bottom: 20px;
+        margin-left: -53px;
+        width: 300px;
+    }
+
+    #signup-form button {
+        padding: 10px 20px;
+        border: none;
+        border-radius: 25px;
+        margin-left: -48px;
+    }
+
+
+    /*Facebook*/
+    #facebook-image-container {
+        margin-left: 95px;
+        margin-top: -120px;
+        display: flex;
+    }
+    
+    /*Instagram*/
+    #instagram-image-container {
+        margin-left: 130px;
+        margin-top: -24px;
+    }
+
+    /*TikTok*/
+    #tiktok-image-container {
+        width: 21px;
+        height: 21px;
+        margin-left: 167px;
+        margin-top: -22px;
+    }
+
+    /*YouTube*/
+    #youtube-image-container {
+        margin-left: 203px;
+        margin-top: -22px;
+    }
+
+    /*Twitter*/
+    #twitter-image-container {
+        margin-left: 239px;
+        margin-top: -22px;
+    }
+
+    /*Spotify*/
+    #spotify-image-container {
+        margin-left: 274px;
+        margin-top: -22px;
+    }
+}
